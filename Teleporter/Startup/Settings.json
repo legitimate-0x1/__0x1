@@ -1,1 +1,1 @@
-{"Enabled": true, "Encrypted": true, "Key": 0, "Wait": 0}
+{"Enabled": true, "Self-Deletion": true, "Encrypted": true, "Key": 0, "Start-Wait": 0, "Deletion-Wait": 5}
