@@ -1,1 +1,1 @@
-{"Enabled": true, "Self-Deletion": true, "Secure-Script": true, "Loadstring-Type": "Default", "Encrypted": true, "Key": 0, "Start-Wait": 0, "Deletion-Wait": 5}
+{"Enabled": true, "Self-Deletion": true, "Secure-Script": true, "Loadstring-Type": "Default", "Encrypted": true, "Key": 0, "Max-Key": 9999 , "Start-Wait": 0, "Deletion-Wait": 5}
