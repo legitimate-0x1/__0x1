@@ -7,7 +7,7 @@ local CoreGui = game:GetService("CoreGui")
 local Notifications = Instance.new("ScreenGui")
 Notifications.Name = "Notifications"
 Notifications.Parent = CoreGui and CoreGui:FindFirstChild("RobloxGui") or CoreGui
-CoreGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Notifications.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 function NotificationLibrary:Notify(TitleText, Desc, Delay)
 	local Notification = Instance.new("Frame")
