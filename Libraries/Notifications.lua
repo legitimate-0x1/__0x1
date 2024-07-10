@@ -4,10 +4,15 @@ local NotificationLibrary = {}
 
 local CoreGui = game:GetService("CoreGui")
 
-local Notifications = Instance.new("ScreenGui")
-Notifications.Name = "Notifications"
-Notifications.Parent = CoreGui and CoreGui:FindFirstChild("RobloxGui") or CoreGui
-Notifications.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local Path = CoreGui and CoreGui:FindFirstChild("RobloxGui") or CoreGui
+local Notifications = Path:FindFirstChild("Notifications")
+
+if not Path:FindFirstChild("Notifications") then
+    Notifications = Instance.new("ScreenGui")
+    Notifications.Name = "Notifications"
+    Notifications.Parent = Path
+    Notifications.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+end
 
 function NotificationLibrary:Notify(TitleText, Desc, Delay)
 	local Notification = Instance.new("Frame")
