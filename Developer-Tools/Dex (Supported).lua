@@ -1,11 +1,21 @@
 -- Edited & Added Support by legitimate0x1!
 -- This dex can run in Roblox & Roblox Studio and with any executor that is not poorly written.
 
+local RobloxStudioSupport = false
+
 -- Instances: 161 | Scripts: 4 | Modules: 1
 local G2L = {};
+local Parent = nil
+
+if RobloxStudioSupport then
+    Parent = game:GetService("Players").LocalPlayer:FindFirstChildOfClass("PlayerGui")
+else
+    local CoreGui = game:GetService("CoreGui")
+    Parent = CoreGui and CoreGui:FindFirstChild("RobloxGui") or CoreGui
+end
 
 -- StarterGui.Dex
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", Parent);
 G2L["1"]["Name"] = [[Dex]];
 G2L["1"]["ResetOnSpawn"] = false;
 
