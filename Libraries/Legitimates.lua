@@ -120,6 +120,9 @@ UIListLayout.Parent = ObjectList
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0, 5)
 
+local SmoothScroll = loadstring(https://raw.githubusercontent.com/legitimate-0x1/__0x1/main/Libraries/SmoothScroll.lua)()
+SmoothScrolll(ObjectList)
+
 local UpdateInput = function(Input)
 	local Delta = Input.Position - DragStart
 	local Pos = UDim2.new(StartPosition.X.Scale, StartPosition.X.Offset + Delta.X, StartPosition.Y.Scale, StartPosition.Y.Offset + Delta.Y)
