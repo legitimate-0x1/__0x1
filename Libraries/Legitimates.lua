@@ -211,7 +211,7 @@ end
 
 GUI_Functions.Load = function()
 	ScreenGui.Parent = GUI_Path
-	loadstring("https://raw.githubusercontent.com/legitimate-0x1/__0x1/main/Libraries/SmoothScroll.lua")()(ObjectList)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/legitimate-0x1/__0x1/main/Libraries/SmoothScroll.lua"))()(ObjectList)
 end
 
 GUI_Functions.Unload = function(Destroy)
