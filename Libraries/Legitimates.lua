@@ -115,6 +115,7 @@ ObjectList.BorderSizePixel = 0
 ObjectList.Position = UDim2.new(0.0489999987, 0, 0.194000006, 0)
 ObjectList.Size = UDim2.new(0, 209, 0, 137)
 ObjectList.ScrollBarThickness = 2
+ObjectList.CanvasSize = UDim2.new(0, 0, 900, 0)
 
 UIListLayout.Parent = ObjectList
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
